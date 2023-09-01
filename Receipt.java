@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Receipt {
     public static void main (String[] args){
         String initial;
+        String Coffee = ("Coffee");
         System.out.println("Welcome to the Crazy Cafe");
         System.out.println("What Would You Like?");
         System.out.println("We Currently Have The Following:");
@@ -17,8 +18,13 @@ public class Receipt {
         Scanner scan = new Scanner(System.in);
         System.out.println("What Would You Like?");
         initial = scan.nextLine();
-        if (initial.toUpperCase() == ("COFFEE"))
-            System.out.println("How Much? (Please enter)");
+        if (initial == "Coffee") {
+            System.out.println("How Much? (Please enter a number)");
+        }
+        else {
+            System.out.print(initial.equals.Coffee);
+        }
+        
 
 
 

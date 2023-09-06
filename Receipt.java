@@ -6,7 +6,7 @@ public class Receipt {
     public static void main (String[] args){
         double sum;
         String initial;
-        String Coffee = ("COFFEE");
+        String addition;
         System.out.println("Welcome to the Crazy Cafe");
         System.out.println("What Would You Like?");
         System.out.println("We Currently Have The Following:");
@@ -19,14 +19,50 @@ public class Receipt {
         Scanner scan = new Scanner(System.in);
         System.out.println("What Would You Like?");
         initial = scan.nextLine();
-        if (initial.toUpperCase() == Coffee) {
+        if (initial.toUpperCase() == "COFFEE") {
             System.out.println("How Much Would You Like?");
             int temp;
             temp = scan.nextInt();
             if ((temp > 0) && (temp % 1 == 0)) {
                 sum = 12.99*temp + sum;
-                
+                System.out.println("Would You Like Anything Else?");
+                addition = scan.nextLine();
             }
+        }
+        if (initial.toUpperCase() == "TEA") {
+            System.out.println("How Much Would You Like?");
+            int temp;
+            temp = scan.nextInt();
+            if ((temp > 0) && (temp % 1 == 0)) {
+                sum = 10.25*temp + sum;
+                System.out.println("Would You Like Anything Else?");
+                addition = scan.nextLine();
+            }
+        }
+        if (initial.toUpperCase() == "BAGEL") {
+            System.out.println("How Much Would You Like?");
+            int temp;
+            temp = scan.nextInt();
+            if ((temp > 0) && (temp % 1 == 0)) {
+                sum = 4.99*temp + sum;
+                System.out.println("Would You Like Anything Else?");
+                addition = scan.nextLine();
+            }
+        }
+        if (initial.toUpperCase() == "DONUT") {
+            System.out.println("How Much Would You Like?");
+            int temp;
+            temp = scan.nextInt();
+            if ((temp > 0) && (temp % 1 == 0)) {
+                sum = 4.99*temp + sum;
+                System.out.println("Would You Like Anything Else?");
+                addition = scan.nextLine();
+            }
+        }
+        addition = addition.toUpperCase();
+        if ((addition == "YES") || (addition == "Y")) {
+            
+
         }
         
         }

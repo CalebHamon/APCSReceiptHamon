@@ -23,7 +23,10 @@ public class Receipt {
             System.out.println("How Much Would You Like?");
             int temp;
             temp = scan.nextInt();
-            sum = 
+            if ((temp > 0) && (temp % 1 == 0)) {
+                sum = 12.99*temp + sum;
+                
+            }
         }
         
         }

@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Receipt {
     public static void main (String[] args){
+        double sum;
         String initial;
-        String Coffee = ("Coffee");
+        String Coffee = ("COFFEE");
         System.out.println("Welcome to the Crazy Cafe");
         System.out.println("What Would You Like?");
         System.out.println("We Currently Have The Following:");
@@ -18,13 +19,13 @@ public class Receipt {
         Scanner scan = new Scanner(System.in);
         System.out.println("What Would You Like?");
         initial = scan.nextLine();
-        for (int i = 0; i < 1; i++ ) {
-            if (initial.toUpperCase() == "Coffee" ) {
-                System.out.println("How Much Would You Like?")
-                int temp;
-                temp = scan.nextInt();
-                if (temp  )
-            }
+        if (initial.toUpperCase() == Coffee) {
+            System.out.println("How Much Would You Like?");
+            int temp;
+            temp = scan.nextInt();
+            sum = 
+        }
+        
         }
 
 

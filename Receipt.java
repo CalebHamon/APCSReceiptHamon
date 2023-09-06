@@ -18,13 +18,14 @@ public class Receipt {
         Scanner scan = new Scanner(System.in);
         System.out.println("What Would You Like?");
         initial = scan.nextLine();
-        if (initial == "Coffee") {
-            System.out.println("How Much? (Please enter a number)");
+        for (int i = 0; i < 1; i++ ) {
+            if (initial.toUpperCase() == "Coffee" ) {
+                System.out.println("How Much Would You Like?")
+                int temp;
+                temp = scan.nextInt();
+                if (temp  )
+            }
         }
-        else {
-            System.out.print(initial.equals.Coffee);
-        }
-        
 
 
 

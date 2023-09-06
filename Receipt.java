@@ -19,6 +19,7 @@ public class Receipt {
         Scanner scan = new Scanner(System.in);
         System.out.println("What Would You Like?");
         initial = scan.nextLine();
+        for (int i; i < 2; i++)
         if (initial.toUpperCase() == "COFFEE") {
             System.out.println("How Much Would You Like?");
             int temp;
@@ -61,7 +62,8 @@ public class Receipt {
         }
         addition = addition.toUpperCase();
         if ((addition == "YES") || (addition == "Y")) {
-            
+            System.out.println("Would Else Would You Like?");
+            initial = scan.nextLine();
 
         }
         
